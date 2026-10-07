@@ -70,8 +70,8 @@ struct MenuItem {
 const MenuItem MENU_ITEMS[] = {
   {"NAP",   1,  18, -4, NAP_REACTION},   // top: sleep and emit Zs
   {"PLAY", 12, -9, -5, RUN_REACTION},    // right: two fast laps + hearts
-  {"FEED",  3,  2,  18, JUMP_REACTION},  // bottom: wiggle and jump
-  {"PET",   7,  0,  0, HEART_REACTION},  // left: jump and emit hearts
+  {"FEED",  3,  2,  18, HEART_REACTION},  // bottom: wiggle and jump
+  {"INSECTS!",   7,  0,  0, JUMP_REACTION},  // left: jump and emit hearts
 };
 const int MENU_ITEM_COUNT = sizeof(MENU_ITEMS) / sizeof(MENU_ITEMS[0]);
 
@@ -447,13 +447,16 @@ void handleButtons() {
 }
 
 void drawHeart(int x, int y) {
-  // A tiny seven-pixel-wide heart that stays crisp on the OLED.
-  display.fillRect(x - 2, y, 2, 2, SSD1306_WHITE);
-  display.fillRect(x + 1, y, 2, 2, SSD1306_WHITE);
-  display.fillRect(x - 3, y + 2, 7, 2, SSD1306_WHITE);
-  display.fillRect(x - 2, y + 4, 5, 1, SSD1306_WHITE);
-  display.fillRect(x - 1, y + 5, 3, 1, SSD1306_WHITE);
-  display.drawPixel(x, y + 6, SSD1306_WHITE);
+  // A tiny seven-pixel-wide heart that stays crisp on the OLED.void drawSparkle(int x, int y) CHANGD
+  display.drawPixel(x, y - 2, SSD1306_WHITE);
+  display.drawPixel(x - 1, y - 1, SSD1306_WHITE);
+  display.drawPixel(x + 1, y - 1, SSD1306_WHITE);
+  display.drawPixel(x - 2, y, SSD1306_WHITE);
+  display.drawPixel(x, y, SSD1306_WHITE);
+  display.drawPixel(x + 2, y, SSD1306_WHITE);
+  display.drawPixel(x - 1, y + 1, SSD1306_WHITE);
+  display.drawPixel(x + 1, y + 1, SSD1306_WHITE);
+  display.drawPixel(x, y + 2, SSD1306_WHITE);
 }
 
 void drawHearts(uint32_t now, int petX, int petY) {
@@ -511,7 +514,9 @@ void drawPet() {
   petX = constrain(petX, 0, SCREEN_WIDTH - PET_SPRITE_WIDTH);
   display.drawBitmap(petX, petY, PET_SPRITE, PET_SPRITE_WIDTH, PET_SPRITE_HEIGHT,
                      SSD1306_WHITE);
-
+if (!isNapping() && (now / 250) % 2 == 0) {
+  drawSparkle(petX - 4, petY + 18);
+}
   if (isNapping()) {
     drawSleepZs(now, petX, petY);
   }
