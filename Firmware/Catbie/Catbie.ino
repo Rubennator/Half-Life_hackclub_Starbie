@@ -106,12 +106,12 @@ const int PET_SPRITE_HEIGHT = 32;
 // then a jump, except PLAY which runs two fast laps.
 const uint16_t PET_WALK_PIXEL_MS = 70;
 const uint16_t PET_PRE_JUMP_MS = 230;
-const uint16_t PET_JUMP_MS = 430;
-const int PET_JUMP_HEIGHT = 16;
+const uint16_t PET_JUMP_MS = 480; // takes longer to jump if you jump higher
+const int PET_JUMP_HEIGHT = 20; // CHANGED: cat go wiee
 const uint32_t NAP_DURATION_MS = 70000;  // 48 seconds: four times the old nap. //My cat sleeps pretty long in his tipi so 70 seconds sound more like him! :)
-const uint16_t HEARTS_DURATION_MS = 1600;
-const uint16_t PLAY_LAP_MS = 800; // is it 3 laps in 800 ms? or 1 lap takes 800 ms?
-const uint8_t PLAY_LAP_COUNT = 3; // 3 laps is more than 2!
+const uint16_t HEARTS_DURATION_MS = 1600; 
+const uint16_t PLAY_LAP_MS = 800; // is it 3 laps in 800 ms? or 1 lap takes 800 ms? I think its the last one
+const uint8_t PLAY_LAP_COUNT = 3; // 3 laps is more than 2! So 24 sec total!
 
 // Each byte stores eight pixels, left to right. This sparse outline keeps the
 // supplied creature readable on a tiny, one-bit OLED: head, eye, legs, tail,
