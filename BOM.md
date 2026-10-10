@@ -18,7 +18,7 @@
 | [0.96 inch OLED Display](https://www.tinytronics.nl/en/displays/oled/0.96-inch-oled-display-128*64-pixels-white-i2c) | To show the Catbie and to interact with it | 1 | $5.32 | $5.32 | [Tinytronics](https://www.tinytronics.nl/en/displays/oled/0.96-inch-oled-display-128*64-pixels-white-i2c) |
 | [Pushbutton](https://www.tinytronics.nl/en/switches/manual-switches/pcb-switches/breadboard-tactile-pushbutton-switch-momentary-2pin-6*6*5mm) | To control the Catbie. Also buying some with my own, but do not know if it wil work. | 2 | $0.17 | $0.34 | [Tinytronics](https://www.tinytronics.nl/en/switches/manual-switches/pcb-switches/breadboard-tactile-pushbutton-switch-momentary-2pin-6*6*5mm) |
 | **Parts subtotal** | — | — | — | **$23.86** | — |
-| **Tax & shipping** | — | — | — | **$0.00** | — |
-| **Total** | — | — | — | **$23.86** | — |
+| **Tax & shipping** | — | — | — | **$3.31** | — |
+| **Total** | — | — | — | **$27.17** | — |
 
-$6.14 left of the tier's funding.
+$2.83 left of the tier's funding.
