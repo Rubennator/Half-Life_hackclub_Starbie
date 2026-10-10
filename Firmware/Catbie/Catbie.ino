@@ -1,5 +1,5 @@
 /*
-  Starbie: a tiny motion-controlled digital pet
+  Catbie: a tiny motion-controlled digital pet
 
   This is intentionally one file. Open this .ino file in Arduino IDE, edit
   the BEGINNER SETTINGS section, and upload it to a Seeed XIAO ESP32-C3.
@@ -41,7 +41,7 @@ const uint8_t MPU6050_ADDRESS = 0x68;
 
 // --- Starting stats -------------------------------------------------------
 // Stats are 0 to 100. They only change when you select an action or shake
-// Starbie; nothing slowly drains while it sits on your desk.
+// Catbie; nothing slowly drains while it sits on your desk.
 const int STARTING_JOY = 70;
 const int STARTING_ENERGY = 75;
 const int STARTING_FULLNESS = 65;
@@ -90,9 +90,9 @@ const float MENU_Y_DIRECTION = -1.0f;
 const float MENU_CENTER_DEADZONE = 0.8f;
 const float SHAKE_THRESHOLD = 7.0f;
 
-// Shake is the only movement that has an effect outside the radial menu.
-const int SHAKE_JOY_CHANGE = 5;
-const int SHAKE_ENERGY_CHANGE = -2;
+// Shake is the only movement that has an effect outside the radial menu. Cat doesnt like to be shaked around.
+const int SHAKE_JOY_CHANGE = -2;
+const int SHAKE_ENERGY_CHANGE = 2; // Cat becomes ANGRY!! 
 const int SHAKE_FULLNESS_CHANGE = -1;
 
 // --- Your pet's bitmap and animation -------------------------------------
@@ -108,10 +108,10 @@ const uint16_t PET_WALK_PIXEL_MS = 70;
 const uint16_t PET_PRE_JUMP_MS = 230;
 const uint16_t PET_JUMP_MS = 430;
 const int PET_JUMP_HEIGHT = 16;
-const uint32_t NAP_DURATION_MS = 48000;  // 48 seconds: four times the old nap.
+const uint32_t NAP_DURATION_MS = 70000;  // 48 seconds: four times the old nap. //My cat sleeps pretty long in his tipi so 70 seconds sound more like him! :)
 const uint16_t HEARTS_DURATION_MS = 1600;
-const uint16_t PLAY_LAP_MS = 800;
-const uint8_t PLAY_LAP_COUNT = 2;
+const uint16_t PLAY_LAP_MS = 800; // is it 3 laps in 800 ms? or 1 lap takes 800 ms?
+const uint8_t PLAY_LAP_COUNT = 3; // 3 laps is more than 2!
 
 // Each byte stores eight pixels, left to right. This sparse outline keeps the
 // supplied creature readable on a tiny, one-bit OLED: head, eye, legs, tail,
@@ -208,7 +208,7 @@ void changePet(int joyChange, int energyChange, int fullnessChange) {
 }
 
 void loadPet() {
-  preferences.begin("starbie", false);
+  preferences.begin("catbie", false);
   if (RESET_SAVED_PET_ON_BOOT) {
     preferences.clear();
   }
@@ -552,7 +552,7 @@ void drawStatBar(int y, const char *label, int value) {
 
 void drawStats() {
   display.clearDisplay();
-  drawStatBar(5, "JOY", pet.joy);
+  drawStatBar(5, "HAPPY", pet.joy); // Changed: JOY to HAPPY (becus i can and was wondering if this changed the screen)
   drawStatBar(20, "ENERGY", pet.energy);
   drawStatBar(35, "FULL", pet.fullness);
 
