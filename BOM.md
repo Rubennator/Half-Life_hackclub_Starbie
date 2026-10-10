@@ -14,7 +14,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [PCB](https://cart.jlcpcb.com/quote?from=audrey5&_t=1791644236844&spm=Jlcpcb.Instantquote&up_spm=Jlcpcb.Loginpage.1003) | For components to sit on | 1 | $10.22 | $10.22 | [JLCPCB](https://cart.jlcpcb.com/quote?from=audrey5&_t=1791644236844&spm=Jlcpcb.Instantquote&up_spm=Jlcpcb.Loginpage.1003) |
 | **Parts subtotal** | — | — | — | **$10.22** | — |
-| **Tax & shipping** | — | — | — | **$0.00** | — |
-| **Total** | — | — | — | **$10.22** | — |
+| **Tax & shipping** | — | — | — | **$7.14** | — |
+| **Total** | — | — | — | **$17.36** | — |
 
-$19.78 left of the tier's funding.
+$12.64 left of the tier's funding.
