@@ -1,6 +1,7 @@
 In this project I will try to learn how to how to make a pcb. And also how a pcb might work! 
 New idea: Cat starbeeee!!!!!!!!!!!!!!!!!!!!!!!! So in the shape of an cat instead of a star.
-
+<img width="354" height="449" alt="Screenshot 2026-09-29 224754" src="https://github.com/user-attachments/assets/1ae47e3b-1efd-47ff-ace5-729170db6bf2" />
+Cat for shape..... :)
 
 Finished product is a tamagotchi shaped like a cat with software to make it more like cat!
 So I made the schematic for the PCB and then I created the the board with the traces and lines. 
