@@ -8,7 +8,9 @@ Cat for shape..... :)
 Finished product is a tamagotchi shaped like a cat with software to make it more like cat!
 So I made the schematic for the PCB and then I created the the board with the traces and lines. 
 The board is shaped like a cat with some cats on it! 
+
 <img width="420" height="459" alt="41839" src="https://github.com/user-attachments/assets/a4c15c0a-bd37-4f4b-a1b6-8a4ed18caa66" />
+
 Also my name and the year I made this. 
 In the sofware I made it more like my cat, he sleeps in a Tipi so "Sleep" became "Tipi!". And "Play" became "Birds". 
 I also made my own character (a cat) and when he walks it should show small paws! 
