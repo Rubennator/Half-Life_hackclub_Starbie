@@ -15,4 +15,14 @@ Also my name and the year I made this.
 In the sofware I made it more like my cat, he sleeps in a Tipi so "Sleep" became "Tipi!". And "Play" became "Birds". 
 I also made my own character (a cat) and when he walks it should show small paws! 
 
+
+Controls (for now):
+Button 1: Opens the menu and confirms choice in menu's
+Button 2: Goes to stats-screen
+Tilting the Catbie: Moves a cursor to select up, down, right and left.
+Shaking the Catbie: Wakes the small cat up and gets the stats.
+
+In the menu you can do 4 things: Tipi (sleep), Birds (cat gets the zoomies), Feed (Feed the cat) & Pet (Jumps).
+
+
 But thats it, I hope that it works. We will find out in 5 weeks! 
