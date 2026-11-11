@@ -24,5 +24,6 @@ Shaking the Catbie: Wakes the small cat up and gets the stats.
 
 In the menu you can do 4 things: Tipi (sleep), Birds (cat gets the zoomies), Feed (Feed the cat) & Pet (Jumps).
 
+The Keycaps I will 3D-print because shiping for 2 keycaps is quite expensive! 
 
 But thats it, I hope that it works. We will find out in 5 weeks! 
